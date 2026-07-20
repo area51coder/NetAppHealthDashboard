@@ -12,7 +12,7 @@ from core.config import load_settings
 from core.inventory import load_clusters
 from core.authentication import load_credentials
 
-from create_credentials import encrypt_credentials
+from core.create_credentials import encrypt_credentials
 
 
 # ---------------------------------------------------------
