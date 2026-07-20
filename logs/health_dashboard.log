@@ -61,3 +61,18 @@
 17-07-2026 15:04:01 | INFO     | config.py | load_settings | Line:60 | Configuration loaded successfully.
 17-07-2026 15:05:54 | INFO     | config.py | load_settings | Line:50 | Loading configuration : C:\RY\Automation Project\NetApp Health Check\NetAppHealthDashboard\NetAppHealthDashboard\config\settings.json
 17-07-2026 15:05:54 | INFO     | config.py | load_settings | Line:60 | Configuration loaded successfully.
+20-07-2026 14:23:21 | INFO     | config.py | load_settings | Line:50 | Loading configuration : C:\RY\Automation Project\NetApp Health Check\NetAppHealthDashboard\NetAppHealthDashboard\config\settings.json
+20-07-2026 14:23:21 | INFO     | config.py | load_settings | Line:60 | Configuration loaded successfully.
+20-07-2026 14:23:58 | INFO     | config.py | load_settings | Line:50 | Loading configuration : C:\RY\Automation Project\NetApp Health Check\NetAppHealthDashboard\NetAppHealthDashboard\config\settings.json
+20-07-2026 14:23:58 | INFO     | config.py | load_settings | Line:60 | Configuration loaded successfully.
+20-07-2026 14:46:54 | INFO     | config.py | load_settings | Line:50 | Loading configuration : C:\RY\Automation Project\NetApp Health Check\NetAppHealthDashboard\NetAppHealthDashboard\config\settings.json
+20-07-2026 14:46:54 | INFO     | config.py | load_settings | Line:60 | Configuration loaded successfully.
+20-07-2026 14:48:44 | INFO     | config.py | load_settings | Line:50 | Loading configuration : C:\RY\Automation Project\NetApp Health Check\NetAppHealthDashboard\NetAppHealthDashboard\config\settings.json
+20-07-2026 14:48:44 | INFO     | config.py | load_settings | Line:60 | Configuration loaded successfully.
+20-07-2026 15:30:43 | INFO     | config.py | load_settings | Line:50 | Loading configuration : C:\RY\Automation Project\NetApp Health Check\NetAppHealthDashboard\NetAppHealthDashboard\config\settings.json
+20-07-2026 15:30:43 | INFO     | config.py | load_settings | Line:60 | Configuration loaded successfully.
+20-07-2026 15:30:43 | INFO     | connection.py | connect | Line:74 | Connecting to NetApp-Prod (192.168.10.100)
+20-07-2026 15:31:04 | ERROR    | connection.py | connect | Line:124 | Connection Timeout : 192.168.10.100
+20-07-2026 15:40:51 | INFO     | config.py | load_settings | Line:50 | Loading configuration : C:\RY\Automation Project\NetApp Health Check\NetAppHealthDashboard\NetAppHealthDashboard\config\settings.json
+20-07-2026 15:40:51 | INFO     | config.py | load_settings | Line:60 | Configuration loaded successfully.
+20-07-2026 15:40:51 | INFO     | connection.py | connect | Line:74 | Connecting to NetApp-Prod (192.168.10.100)
