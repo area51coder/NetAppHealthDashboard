@@ -1,0 +1,22 @@
+{
+    "application_name": "NetApp Health Dashboard",
+    "version": "1.0",
+
+    "protocol": "https",
+
+    "verify_ssl": false,
+
+    "request_timeout": 60,
+
+    "max_retry": 3,
+
+    "log_level": "INFO",
+
+    "report_output": "reports_output",
+
+    "log_directory": "logs",
+
+    "dashboard_title": "NetApp Cluster Health Dashboard",
+
+    "date_format": "%d-%m-%Y %H:%M:%S"
+}

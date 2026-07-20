@@ -1,0 +1,63 @@
+16-07-2026 21:43:14 | INFO     | main.py | <module> | Line:5 | Application Started
+16-07-2026 21:43:14 | WARNING  | main.py | <module> | Line:7 | This is a warning message
+16-07-2026 21:43:14 | ERROR    | main.py | <module> | Line:9 | This is an error message
+16-07-2026 21:43:43 | INFO     | main.py | <module> | Line:5 | Application Started
+16-07-2026 21:43:43 | WARNING  | main.py | <module> | Line:7 | This is a warning message
+16-07-2026 21:43:43 | ERROR    | main.py | <module> | Line:9 | This is an error message
+16-07-2026 21:51:03 | INFO     | main.py | <module> | Line:5 | Application Started
+16-07-2026 21:51:03 | WARNING  | main.py | <module> | Line:7 | This is a warning message
+16-07-2026 21:51:03 | ERROR    | main.py | <module> | Line:9 | This is an error message
+16-07-2026 21:51:03 | INFO     | config.py | load | Line:38 | Loading configuration : C:\RY\Automation Project\NetApp Health Check\NetAppHealthDashboard\NetAppHealthDashboard\config\settings.json
+16-07-2026 21:51:03 | INFO     | config.py | load | Line:43 | Configuration loaded successfully.
+16-07-2026 21:55:10 | INFO     | main.py | <module> | Line:5 | Application Started
+16-07-2026 21:55:10 | WARNING  | main.py | <module> | Line:7 | This is a warning message
+16-07-2026 21:55:10 | ERROR    | main.py | <module> | Line:9 | This is an error message
+16-07-2026 21:55:10 | INFO     | config.py | load | Line:38 | Loading configuration : C:\RY\Automation Project\NetApp Health Check\NetAppHealthDashboard\NetAppHealthDashboard\config\settings.json
+16-07-2026 21:55:10 | INFO     | config.py | load | Line:43 | Configuration loaded successfully.
+16-07-2026 21:57:26 | INFO     | main.py | <module> | Line:5 | Application Started
+16-07-2026 21:57:26 | WARNING  | main.py | <module> | Line:7 | This is a warning message
+16-07-2026 21:57:26 | ERROR    | main.py | <module> | Line:9 | This is an error message
+16-07-2026 21:57:26 | INFO     | config.py | load | Line:38 | Loading configuration : C:\RY\Automation Project\NetApp Health Check\NetAppHealthDashboard\NetAppHealthDashboard\config\settings.json
+16-07-2026 21:57:26 | INFO     | config.py | load | Line:43 | Configuration loaded successfully.
+16-07-2026 21:57:50 | INFO     | main.py | <module> | Line:5 | Application Started
+16-07-2026 21:57:50 | WARNING  | main.py | <module> | Line:7 | This is a warning message
+16-07-2026 21:57:50 | ERROR    | main.py | <module> | Line:9 | This is an error message
+16-07-2026 21:57:50 | INFO     | config.py | load | Line:38 | Loading configuration : C:\RY\Automation Project\NetApp Health Check\NetAppHealthDashboard\NetAppHealthDashboard\config\settings.json
+16-07-2026 21:57:50 | INFO     | config.py | load | Line:43 | Configuration loaded successfully.
+16-07-2026 21:58:01 | INFO     | main.py | <module> | Line:5 | Application Started
+16-07-2026 21:58:01 | WARNING  | main.py | <module> | Line:7 | This is a warning message
+16-07-2026 21:58:01 | ERROR    | main.py | <module> | Line:9 | This is an error message
+16-07-2026 21:58:01 | INFO     | config.py | load | Line:38 | Loading configuration : C:\RY\Automation Project\NetApp Health Check\NetAppHealthDashboard\NetAppHealthDashboard\config\settings.json
+16-07-2026 21:58:01 | INFO     | config.py | load | Line:43 | Configuration loaded successfully.
+16-07-2026 21:58:25 | INFO     | main.py | <module> | Line:5 | Application Started
+16-07-2026 21:58:25 | WARNING  | main.py | <module> | Line:7 | This is a warning message
+16-07-2026 21:58:25 | ERROR    | main.py | <module> | Line:9 | This is an error message
+16-07-2026 21:58:25 | INFO     | config.py | load | Line:38 | Loading configuration : C:\RY\Automation Project\NetApp Health Check\NetAppHealthDashboard\NetAppHealthDashboard\config\settings.json
+16-07-2026 21:58:25 | INFO     | config.py | load | Line:43 | Configuration loaded successfully.
+16-07-2026 21:58:56 | INFO     | main.py | <module> | Line:5 | Application Started
+16-07-2026 21:58:56 | WARNING  | main.py | <module> | Line:7 | This is a warning message
+16-07-2026 21:58:56 | ERROR    | main.py | <module> | Line:9 | This is an error message
+16-07-2026 21:58:56 | INFO     | config.py | load | Line:38 | Loading configuration : C:\RY\Automation Project\NetApp Health Check\NetAppHealthDashboard\NetAppHealthDashboard\config\settings.json
+16-07-2026 21:58:56 | INFO     | config.py | load | Line:43 | Configuration loaded successfully.
+16-07-2026 22:00:02 | INFO     | main.py | <module> | Line:5 | Application Started
+16-07-2026 22:00:02 | WARNING  | main.py | <module> | Line:7 | This is a warning message
+16-07-2026 22:00:02 | ERROR    | main.py | <module> | Line:9 | This is an error message
+16-07-2026 22:00:02 | INFO     | config.py | load | Line:38 | Loading configuration : C:\RY\Automation Project\NetApp Health Check\NetAppHealthDashboard\NetAppHealthDashboard\config\settings.json
+16-07-2026 22:00:02 | INFO     | config.py | load | Line:43 | Configuration loaded successfully.
+17-07-2026 11:05:59 | INFO     | main.py | <module> | Line:5 | Application Started
+17-07-2026 11:05:59 | WARNING  | main.py | <module> | Line:7 | This is a warning message
+17-07-2026 11:05:59 | ERROR    | main.py | <module> | Line:9 | This is an error message
+17-07-2026 11:05:59 | INFO     | config.py | load | Line:38 | Loading configuration : C:\RY\Automation Project\NetApp Health Check\NetAppHealthDashboard\NetAppHealthDashboard\config\settings.json
+17-07-2026 11:05:59 | INFO     | config.py | load | Line:43 | Configuration loaded successfully.
+17-07-2026 14:13:49 | INFO     | config.py | load | Line:38 | Loading configuration : C:\RY\Automation Project\NetApp Health Check\NetAppHealthDashboard\NetAppHealthDashboard\config\settings.json
+17-07-2026 14:13:49 | INFO     | config.py | load | Line:43 | Configuration loaded successfully.
+17-07-2026 14:41:55 | INFO     | config.py | load_settings | Line:50 | Loading configuration : C:\RY\Automation Project\NetApp Health Check\NetAppHealthDashboard\NetAppHealthDashboard\config\settings.json
+17-07-2026 14:41:55 | INFO     | config.py | load_settings | Line:60 | Configuration loaded successfully.
+17-07-2026 14:50:46 | INFO     | config.py | load_settings | Line:50 | Loading configuration : C:\RY\Automation Project\NetApp Health Check\NetAppHealthDashboard\NetAppHealthDashboard\config\settings.json
+17-07-2026 14:50:46 | INFO     | config.py | load_settings | Line:60 | Configuration loaded successfully.
+17-07-2026 14:56:28 | INFO     | config.py | load_settings | Line:50 | Loading configuration : C:\RY\Automation Project\NetApp Health Check\NetAppHealthDashboard\NetAppHealthDashboard\config\settings.json
+17-07-2026 14:56:28 | INFO     | config.py | load_settings | Line:60 | Configuration loaded successfully.
+17-07-2026 15:04:01 | INFO     | config.py | load_settings | Line:50 | Loading configuration : C:\RY\Automation Project\NetApp Health Check\NetAppHealthDashboard\NetAppHealthDashboard\config\settings.json
+17-07-2026 15:04:01 | INFO     | config.py | load_settings | Line:60 | Configuration loaded successfully.
+17-07-2026 15:05:54 | INFO     | config.py | load_settings | Line:50 | Loading configuration : C:\RY\Automation Project\NetApp Health Check\NetAppHealthDashboard\NetAppHealthDashboard\config\settings.json
+17-07-2026 15:05:54 | INFO     | config.py | load_settings | Line:60 | Configuration loaded successfully.
