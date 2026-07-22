@@ -1,0 +1,2 @@
+﻿ClusterName,UUID,Version,Location,Contact,Timezone,ManagementIP,Health,State
+cnarnsh0103,3524a229-c0ae-11e8-a57e-00a098df2b26,NetApp Release 9.12.1P18: Wed May 07 12:18:07 UTC 2025,CESSON_8B102,ocb_ops_ito_infra_bck_sto_ind@orange.com,Europe/Paris,10.100.102.40,,

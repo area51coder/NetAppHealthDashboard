@@ -18,7 +18,7 @@ NetApp Health Dashboard
 
 <link
 rel="stylesheet"
-href="../reports/static/css/style.css">
+href="..reports/static/css/style.css">
 
 
 <script
@@ -59,7 +59,7 @@ Generated
 
 <div>
 
-{{ generated }}
+22-Jul-2026 14:17:00
 
 </div>
 
@@ -79,7 +79,7 @@ Clusters
 
 <div class="card-value">
 
-{{ summary.clusters }}
+1
 
 </div>
 
@@ -95,7 +95,7 @@ Nodes
 
 <div class="card-value">
 
-{{ summary.nodes }}
+1
 
 </div>
 
@@ -111,7 +111,7 @@ Volumes
 
 <div class="card-value">
 
-{{ summary.volumes }}
+109
 
 </div>
 
@@ -127,7 +127,7 @@ Aggregates
 
 <div class="card-value">
 
-{{ summary.aggregates }}
+1
 
 </div>
 
@@ -143,7 +143,7 @@ Disks
 
 <div class="card-value">
 
-{{ summary.disks }}
+48
 
 </div>
 
@@ -159,7 +159,7 @@ Events
 
 <div class="card-value">
 
-{{ summary.events }}
+2048
 
 </div>
 
@@ -179,7 +179,7 @@ Total Capacity
 
 <h1>
 
-{{ capacity.total }}
+0.00 B
 
 </h1>
 
@@ -195,7 +195,7 @@ Used Capacity
 
 <h1>
 
-{{ capacity.used }}
+0.00 B
 
 </h1>
 
@@ -211,7 +211,7 @@ Free Capacity
 
 <h1>
 
-{{ capacity.free }}
+0.00 B
 
 </h1>
 
@@ -227,7 +227,7 @@ Used %
 
 <h1>
 
-{{ capacity.used_percent }}%
+0%
 
 </h1>
 
@@ -273,34 +273,34 @@ Used %
 
         <tbody>
 
-        {% for cluster in cluster_table %}
+        
 
         <tr>
 
             <td>
 
-                {{ cluster.Cluster }}
+                cnarnsh0103
 
             </td>
 
             <td>
 
-                {{ cluster.Version }}
+                NetApp Release 9.12.1P18: Wed May 07 12:18:07 UTC 2025
 
             </td>
 
             <td>
 
-                {{ cluster.IP }}
+                10.100.102.40
 
             </td>
 
             <td>
 
                 <span
-                class="health-badge {{ cluster.HealthColor }}">
+                class="health-badge #9E9E9E">
 
-                    {{ cluster.Health }}
+                    nan
 
                 </span>
 
@@ -308,13 +308,13 @@ Used %
 
             <td>
 
-                {{ cluster.State }}
+                nan
 
             </td>
 
         </tr>
 
-        {% endfor %}
+        
 
         </tbody>
 
@@ -344,7 +344,7 @@ Used %
 
             Used Capacity
 
-            {{ capacity.used_percent }} %
+            0 %
 
         </div>
 
@@ -353,7 +353,7 @@ Used %
             <div
             class="progress-bar"
 
-            style="width:{{ capacity.used_percent }}%;">
+            style="width:0%;">
 
             </div>
 
@@ -616,7 +616,7 @@ Used %
 
         Generated :
 
-        {{ generated }}
+        22-Jul-2026 14:17:00
 
     </div>
 

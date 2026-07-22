@@ -76,3 +76,26 @@
 20-07-2026 15:40:51 | INFO     | config.py | load_settings | Line:50 | Loading configuration : C:\RY\Automation Project\NetApp Health Check\NetAppHealthDashboard\NetAppHealthDashboard\config\settings.json
 20-07-2026 15:40:51 | INFO     | config.py | load_settings | Line:60 | Configuration loaded successfully.
 20-07-2026 15:40:51 | INFO     | connection.py | connect | Line:74 | Connecting to NetApp-Prod (192.168.10.100)
+20-07-2026 16:32:01 | INFO     | config.py | load_settings | Line:50 | Loading configuration : C:\RY\Automation Project\NetApp Health Check\NetAppHealthDashboard\NetAppHealthDashboard\config\settings.json
+20-07-2026 16:32:01 | INFO     | config.py | load_settings | Line:60 | Configuration loaded successfully.
+20-07-2026 16:32:01 | INFO     | connection.py | connect | Line:75 | Connecting to NetApp-Prod (192.168.10.100)
+20-07-2026 16:57:54 | INFO     | config.py | load_settings | Line:50 | Loading configuration : C:\RY\Automation Project\NetApp Health Check\NetAppHealthDashboard\NetAppHealthDashboard\config\settings.json
+20-07-2026 16:57:54 | INFO     | config.py | load_settings | Line:60 | Configuration loaded successfully.
+20-07-2026 16:58:43 | INFO     | config.py | load_settings | Line:50 | Loading configuration : C:\RY\Automation Project\NetApp Health Check\NetAppHealthDashboard\NetAppHealthDashboard\config\settings.json
+20-07-2026 16:58:43 | INFO     | config.py | load_settings | Line:60 | Configuration loaded successfully.
+20-07-2026 16:58:43 | INFO     | connection.py | connect | Line:75 | Connecting to NetApp-Prod (192.168.10.100)
+22-07-2026 13:20:54 | INFO     | main.py | main | Line:81 | Checking Credentials...
+22-07-2026 13:20:54 | INFO     | main.py | main | Line:97 | Credentials already encrypted.
+22-07-2026 13:20:54 | INFO     | main.py | main | Line:105 | Loading Settings...
+22-07-2026 13:20:54 | INFO     | config.py | load_settings | Line:50 | Loading configuration : C:\RY\Automation Project\NetApp Health Check\NetAppHealthDashboard\NetAppHealthDashboard\config\settings.json
+22-07-2026 13:20:54 | INFO     | config.py | load_settings | Line:60 | Configuration loaded successfully.
+22-07-2026 13:20:54 | INFO     | main.py | main | Line:113 | Loading Cluster Inventory...
+22-07-2026 13:20:54 | INFO     | main.py | main | Line:117 | Clusters Loaded : 1
+22-07-2026 13:20:54 | INFO     | main.py | main | Line:125 | Loading Credentials...
+22-07-2026 13:20:54 | INFO     | main.py | main | Line:129 | Credentials Loaded : 2
+22-07-2026 13:20:54 | INFO     | main.py | main | Line:137 | Cleaning Old Reports...
+22-07-2026 13:20:54 | INFO     | csv_writer.py | clear_reports | Line:176 | Old reports removed : 1
+22-07-2026 13:20:54 | INFO     | main.py | main | Line:145 | Starting Health Check...
+22-07-2026 13:20:54 | INFO     | healthcheck_manager.py | run | Line:43 | Starting Health Check Manager...
+22-07-2026 13:20:54 | INFO     | healthcheck_manager.py | run | Line:51 | Processing Cluster : NetApp-Prod
+22-07-2026 13:20:54 | INFO     | connection.py | connect | Line:75 | Connecting to NetApp-Prod (192.168.10.100)
