@@ -236,37 +236,20 @@ Used %
 </section>
 
 <!-- ===================================================== -->
-<!-- Cluster Summary -->
+<!-- CLUSTER SUMMARY -->
 <!-- ===================================================== -->
 
 <section class="section">
 
     <div class="section-header">
 
-        <h2>
-
-            Cluster Summary
-
-        </h2>
+        <h2>Cluster Summary</h2>
 
     </div>
 
-    <div class="table-container">
+    <div class="cluster-table-wrapper">
 
-        <table class="summary-table">
-
-            <colgroup>
-
-                <col style="width:180px">
-                <col style="width:90px">
-                <col style="width:90px">
-                <col style="width:360px">
-                <col style="width:170px">
-                <col style="width:150px">
-                <col style="width:150px">
-                <col>
-
-            </colgroup>
+        <table class="cluster-summary">
 
             <thead>
 
@@ -278,9 +261,9 @@ Used %
 
                     <th>State</th>
 
-                    <th>Version</th>
-
                     <th>Management IP</th>
+
+                    <th>Version</th>
 
                     <th>Location</th>
 
@@ -294,7 +277,7 @@ Used %
 
             <tbody>
 
-                {% for cluster in cluster_table %}
+            {% for cluster in cluster_table %}
 
                 <tr>
 
@@ -320,15 +303,15 @@ Used %
 
                     </td>
 
-                    <td class="version-column">
-
-                        {{ cluster.Version }}
-
-                    </td>
-
                     <td>
 
                         {{ cluster.ManagementIP }}
+
+                    </td>
+
+                    <td class="version">
+
+                        {{ cluster.Version }}
 
                     </td>
 
@@ -344,7 +327,7 @@ Used %
 
                     </td>
 
-                    <td class="contact-column">
+                    <td class="contact">
 
                         {{ cluster.Contact }}
 
@@ -352,7 +335,7 @@ Used %
 
                 </tr>
 
-                {% endfor %}
+            {% endfor %}
 
             </tbody>
 

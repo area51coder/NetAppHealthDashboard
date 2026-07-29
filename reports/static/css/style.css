@@ -1544,3 +1544,172 @@ th,
 td {
     display: table-cell !important;
 }
+
+
+/*==========================================================
+  CLUSTER SUMMARY V2
+==========================================================*/
+
+.cluster-table-wrapper{
+
+    width:100%;
+
+    overflow-x:auto;
+
+    margin-top:15px;
+
+}
+
+.cluster-summary{
+
+    width:100%;
+
+    min-width:1600px;
+
+    border-collapse:collapse;
+
+    background:#ffffff;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+}
+
+.cluster-summary thead{
+
+    background:#1976D2;
+
+}
+
+.cluster-summary th{
+
+    padding:16px;
+
+    color:#ffffff;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    text-align:left;
+
+    border:none;
+
+    white-space:nowrap;
+
+}
+
+.cluster-summary td{
+
+    padding:15px;
+
+    border-bottom:1px solid #ECEFF1;
+
+    color:#37474F;
+
+    font-size:14px;
+
+    vertical-align:top;
+
+}
+
+.cluster-summary tbody tr:nth-child(even){
+
+    background:#FAFCFF;
+
+}
+
+.cluster-summary tbody tr:hover{
+
+    background:#E3F2FD;
+
+}
+
+/* Fixed widths */
+
+.cluster-summary th:nth-child(1),
+.cluster-summary td:nth-child(1){
+
+    width:180px;
+
+}
+
+.cluster-summary th:nth-child(2),
+.cluster-summary td:nth-child(2){
+
+    width:100px;
+
+    text-align:center;
+
+}
+
+.cluster-summary th:nth-child(3),
+.cluster-summary td:nth-child(3){
+
+    width:100px;
+
+    text-align:center;
+
+}
+
+.cluster-summary th:nth-child(4),
+.cluster-summary td:nth-child(4){
+
+    width:170px;
+
+}
+
+.cluster-summary th:nth-child(5),
+.cluster-summary td:nth-child(5){
+
+    width:420px;
+
+}
+
+.cluster-summary th:nth-child(6),
+.cluster-summary td:nth-child(6){
+
+    width:180px;
+
+}
+
+.cluster-summary th:nth-child(7),
+.cluster-summary td:nth-child(7){
+
+    width:180px;
+
+}
+
+.cluster-summary th:nth-child(8),
+.cluster-summary td:nth-child(8){
+
+    width:350px;
+
+}
+
+/* Special formatting */
+
+.cluster-name{
+
+    font-weight:700;
+
+    color:#1565C0;
+
+}
+
+.version{
+
+    line-height:1.5;
+
+    word-break:break-word;
+
+}
+
+.contact{
+
+    word-break:break-all;
+
+}

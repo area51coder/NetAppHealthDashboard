@@ -9,7 +9,7 @@ from utils.logger import Logger
 
 from core.connection import connect
 from core.connection import disconnect
-
+from core.health_engine import evaluate
 from modules.cluster import collect as collect_cluster
 from modules.nodes import collect as collect_nodes
 from modules.aggregates import collect as collect_aggregates
@@ -93,6 +93,42 @@ def run(clusters, credentials, settings):
                 "Events": collect_events(session, cluster_name)
 
             }
+
+            # ==========================================================
+            # HEALTH ENGINE
+            # ==========================================================
+
+            health = evaluate(
+
+                cluster_results["Cluster"],
+
+                cluster_results["Nodes"],
+
+                cluster_results["Aggregates"],
+
+                cluster_results["Volumes"],
+
+                cluster_results["Disks"],
+
+                cluster_results["Network"],
+
+                cluster_results["Performance"],
+
+                cluster_results["SnapMirror"],
+
+                cluster_results["Events"]
+
+            )
+
+            cluster_results["Cluster"]["Health"] = health["Health"]
+
+            cluster_results["Cluster"]["State"] = health["State"]
+
+            cluster_results["Cluster"]["HealthScore"] = health["Score"]
+
+            cluster_results["Cluster"]["Reasons"] = "; ".join(
+                health["Reasons"]
+            )
 
             # -------------------------------------------------
             # Generate CSV Reports

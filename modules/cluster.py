@@ -7,6 +7,7 @@ Cluster Information Collector
 
 from utils.logger import Logger
 from core.connection import get
+import json
 
 logger = Logger.get_logger()
 
@@ -23,9 +24,31 @@ def collect(session, cluster_name):
     logger.info("Collecting Cluster Information...")
 
     response = get(
+
         session,
         "/api/cluster"
     )
+    status = (
+        response.get("metric") or {}
+    ).get("status", "").lower()
+
+    if status == "ok":
+
+        health = "Healthy"
+        state = "Online"
+
+    elif status == "warning":
+
+          health = "Warning"
+          state = "Warning"
+
+    else:
+
+        health = "Critical"
+        state = "Offline"
+    
+    print("\n========== CLUSTER RAW RESPONSE ==========\n")
+    print(json.dumps(response, indent=4))
 
     cluster = {
 
@@ -49,11 +72,9 @@ def collect(session, cluster_name):
             response.get("management_interfaces") or [{}]
         )[0].get("ip", {}).get("address"),
 
-        "Health": (
-            response.get("health") or {}
-        ).get("status"),
+        "Health": health,
 
-        "State": response.get("state")
+        "State": state
 
     }
 
