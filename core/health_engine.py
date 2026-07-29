@@ -7,7 +7,26 @@ Health Engine
 
 from core import rules
 
+# ==========================================================
+# Helper Functions
+# ==========================================================
 
+def to_float(value):
+
+    if value is None:
+        return 0
+
+    if value == "":
+        return 0
+
+    if value == "-":
+        return 0
+
+    try:
+        return float(value)
+
+    except Exception:
+        return 0
 # =========================================================
 # MAIN
 # =========================================================
@@ -126,9 +145,13 @@ def check_nodes(nodes, score, reasons):
 
     for node in nodes:
 
-        cpu = float(node.get("CPU", 0))
+        cpu = node.get("CPU")
 
-        memory = float(node.get("Memory", 0))
+        memory = node.get("Memory")
+
+        cpu = float(cpu) if cpu not in (None, "", "-") else 0
+
+        memory = float(memory) if memory not in (None, "", "-") else 0
 
         if cpu > rules.CPU_LIMIT:
 
@@ -157,19 +180,26 @@ def check_aggregates(aggregates, score, reasons):
 
     for aggr in aggregates:
 
-        used = float(
-            aggr.get(
-                "UsedPercent",
-                0
-            )
+        name = aggr.get("AggregateName")
+
+        used = to_float(
+            aggr.get("UsedPercent")
         )
 
-        if used > rules.AGGREGATE_USED_LIMIT:
+        if used >= rules.AGGR_CRITICAL_LIMIT:
 
-            score -= 2
+            score -= rules.AGGR_CRITICAL_DEDUCTION
 
             reasons.append(
-                f"{aggr['AggregateName']} Usage {used}%"
+                f"{name} Usage {used}%"
+            )
+
+        elif used >= rules.AGGR_WARNING_LIMIT:
+
+            score -= rules.AGGR_WARNING_DEDUCTION
+
+            reasons.append(
+                f"{name} Usage {used}%"
             )
 
     return score, reasons
@@ -183,19 +213,22 @@ def check_volumes(volumes, score, reasons):
 
     for volume in volumes:
 
-        used = float(
-            volume.get(
-                "UsedPercent",
-                0
-            )
-        )
+        used = to_float(volume.get("UsedPercent"))
 
-        if used > rules.VOLUME_USED_LIMIT:
+        if used >= 90:
+
+            score -= 3
+
+            reasons.append(
+                f"{volume['Volume']} Usage {used}% (>90%)"
+            )
+
+        elif used >= 80:
 
             score -= 1
 
             reasons.append(
-                f"{volume['Volume']} Usage {used}%"
+                f"{volume['Volume']} Usage {used}% (>80%)"
             )
 
     return score, reasons

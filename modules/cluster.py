@@ -47,8 +47,8 @@ def collect(session, cluster_name):
         health = "Critical"
         state = "Offline"
     
-    print("\n========== CLUSTER RAW RESPONSE ==========\n")
-    print(json.dumps(response, indent=4))
+    #print("\n========== CLUSTER RAW RESPONSE ==========\n")
+    #print(json.dumps(response, indent=4))
 
     cluster = {
 
