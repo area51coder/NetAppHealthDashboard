@@ -11,7 +11,7 @@ from core.connection import get
 logger = Logger.get_logger()
 
 
-def collect(session):
+def collect(session, cluster_name):
     """
     Collect node information.
 
@@ -34,6 +34,7 @@ def collect(session):
     for record in records:
 
         node = {
+            "ClusterName": session.cluster_name,
 
             "NodeName": record.get("name"),
 

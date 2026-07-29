@@ -11,7 +11,7 @@ from core.connection import get
 logger = Logger.get_logger()
 
 
-def collect(session):
+def collect(session, cluster_name):
     """
     Collect disk information.
 
@@ -54,6 +54,7 @@ def collect(session):
         )
 
         disk = {
+            "ClusterName": session.cluster_name,
 
             "DiskName": record.get("name"),
 

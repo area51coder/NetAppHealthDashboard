@@ -59,7 +59,7 @@ Generated
 
 <div>
 
-{{ generated }}
+27-Jul-2026 10:43:28
 
 </div>
 
@@ -79,7 +79,7 @@ Clusters
 
 <div class="card-value">
 
-{{ summary.clusters }}
+2
 
 </div>
 
@@ -95,7 +95,7 @@ Nodes
 
 <div class="card-value">
 
-{{ summary.nodes }}
+2
 
 </div>
 
@@ -111,7 +111,7 @@ Volumes
 
 <div class="card-value">
 
-{{ summary.volumes }}
+218
 
 </div>
 
@@ -127,7 +127,7 @@ Aggregates
 
 <div class="card-value">
 
-{{ summary.aggregates }}
+2
 
 </div>
 
@@ -143,7 +143,7 @@ Disks
 
 <div class="card-value">
 
-{{ summary.disks }}
+96
 
 </div>
 
@@ -159,7 +159,7 @@ Events
 
 <div class="card-value">
 
-{{ summary.events }}
+4096
 
 </div>
 
@@ -179,7 +179,7 @@ Total Capacity
 
 <h1>
 
-{{ capacity.total }}
+16.77 TB
 
 </h1>
 
@@ -195,7 +195,7 @@ Used Capacity
 
 <h1>
 
-{{ capacity.used }}
+6.64 TB
 
 </h1>
 
@@ -211,7 +211,7 @@ Free Capacity
 
 <h1>
 
-{{ capacity.free }}
+10.13 TB
 
 </h1>
 
@@ -227,7 +227,7 @@ Used %
 
 <h1>
 
-{{ capacity.used_percent }}%
+39.59%
 
 </h1>
 
@@ -251,114 +251,117 @@ Used %
 
     </div>
 
-    <div class="table-container">
+    <table class="summary-table">
 
-        <table class="summary-table">
+        <thead>
 
-            <colgroup>
+        <tr>
 
-                <col style="width:180px">
-                <col style="width:90px">
-                <col style="width:90px">
-                <col style="width:360px">
-                <col style="width:170px">
-                <col style="width:150px">
-                <col style="width:150px">
-                <col>
+            <th>Cluster</th>
 
-            </colgroup>
+            <th>Version</th>
 
-            <thead>
+            <th>Management IP</th>
 
-                <tr>
+            <th>Health</th>
 
-                    <th>Cluster Name</th>
+            <th>State</th>
 
-                    <th>Health</th>
+        </tr>
 
-                    <th>State</th>
+        </thead>
 
-                    <th>Version</th>
+        <tbody>
 
-                    <th>Management IP</th>
+        
 
-                    <th>Location</th>
+        <tr>
 
-                    <th>Timezone</th>
+            <td>
 
-                    <th>Contact</th>
+                cnarnsh0103
 
-                </tr>
+            </td>
 
-            </thead>
+            <td style="word-break: break-word; max-width: 350px;">
+    
 
-            <tbody>
+                NetApp Release 9.12.1P18: Wed May 07 12:18:07 UTC 2025
 
-                {% for cluster in cluster_table %}
+            </td>
 
-                <tr>
+            <td>
 
-                    <td class="cluster-name">
+                10.100.102.40
 
-                        {{ cluster.ClusterName }}
+            </td>
 
-                    </td>
+            <td>
 
-                    <td>
+                <span
+                class="health-badge gray">
 
-                        <span class="health-badge {{ cluster.HealthColor }}">
+                    -
 
-                            {{ cluster.Health }}
+                </span>
 
-                        </span>
+            </td>
 
-                    </td>
+            <td>
 
-                    <td>
+                -
 
-                        {{ cluster.State }}
+            </td>
 
-                    </td>
+        </tr>
 
-                    <td class="version-column">
+        
 
-                        {{ cluster.Version }}
+        <tr>
 
-                    </td>
+            <td>
 
-                    <td>
+                cnarnsh0104
 
-                        {{ cluster.ManagementIP }}
+            </td>
 
-                    </td>
+            <td style="word-break: break-word; max-width: 350px;">
+    
 
-                    <td>
+                NetApp Release 9.12.1P18: Wed May 07 12:18:07 UTC 2025
 
-                        {{ cluster.Location }}
+            </td>
 
-                    </td>
+            <td>
 
-                    <td>
+                10.100.102.43
 
-                        {{ cluster.Timezone }}
+            </td>
 
-                    </td>
+            <td>
 
-                    <td class="contact-column">
+                <span
+                class="health-badge gray">
 
-                        {{ cluster.Contact }}
+                    -
 
-                    </td>
+                </span>
 
-                </tr>
+            </td>
 
-                {% endfor %}
+            <td>
 
-            </tbody>
+                -
 
-        </table>
+            </td>
 
-    </div>
+        </tr>
+
+        
+
+        </tbody>
+
+    </table>
 
 </section>
 
@@ -384,7 +387,7 @@ Used %
 
             Used Capacity
 
-            {{ capacity.used_percent }} %
+            39.59 %
 
         </div>
 
@@ -393,7 +396,7 @@ Used %
             <div
             class="progress-bar"
 
-            style="width:{{ capacity.used_percent }}%;">
+            style="width:39.59%;">
 
             </div>
 
@@ -656,7 +659,7 @@ Used %
 
         Generated :
 
-        {{ generated }}
+        27-Jul-2026 10:43:28
 
     </div>
 
@@ -684,18 +687,30 @@ Used %
 
 </tr>
 
-{% for agg in aggregate_table %}
+
 
 <tr>
 
-<td>{{ agg.ClusterName }}</td>
+<td></td>
 
-<td>{{ agg.AggregateName }}</td>
+<td></td>
 
-<td>{{ agg.UsedPercent }}</td>
+<td></td>
 
 </tr>
 
-{% endfor %}
+
+
+<tr>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+</tr>
+
+
 
 </table>

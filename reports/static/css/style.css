@@ -354,6 +354,8 @@ header{
 
     background:#fff;
 
+    table-layout:fixed;
+
     box-shadow:
         0 8px 25px rgba(0,0,0,.06);
 
@@ -382,6 +384,10 @@ header{
 
     font-weight:600;
 
+    vertical-align:top;
+
+    overflow-wrap:anywhere;
+
     letter-spacing:.5px;
 
 }
@@ -393,6 +399,10 @@ header{
     border-bottom:1px solid #edf2f7;
 
     font-size:14px;
+
+    vertical-align:top;
+
+    overflow-wrap:anywhere;
 
     color:#455A64;
 
@@ -1006,7 +1016,84 @@ header::before{
 
 }
 
+/*==========================================================
+  CLUSTER SUMMARY
+==========================================================*/
 
+.cluster-card{
+
+    background:#ffffff;
+
+    border-radius:12px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+    border:1px solid #dfe6ee;
+
+    overflow:hidden;
+
+}
+
+.cluster-title{
+
+    background:#1565C0;
+
+    color:#ffffff;
+
+    padding:14px 20px;
+
+    font-size:18px;
+
+    font-weight:700;
+
+}
+
+.cluster-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.cluster-table th{
+
+    width:220px;
+
+    background:#f5f7fa;
+
+    text-align:left;
+
+    padding:12px 18px;
+
+    border-bottom:1px solid #e5e7eb;
+
+    color:#37474F;
+
+    font-weight:600;
+
+}
+
+.cluster-table td{
+
+    padding:12px 18px;
+
+    border-bottom:1px solid #e5e7eb;
+
+    color:#455A64;
+
+    word-break:break-word;
+
+}
+
+.cluster-table tr:last-child th,
+.cluster-table tr:last-child td{
+
+    border-bottom:none;
+
+}
 /*==========================================================
   TABLE ENHANCEMENT
 ==========================================================*/
@@ -1046,6 +1133,63 @@ header::before{
 }
 
 
+/*==========================================================
+  TABLE CONTAINER
+==========================================================*/
+
+.table-container{
+
+    width:100%;
+
+    overflow-x:auto;
+
+}
+
+/*==========================================================
+  CLUSTER TABLE
+==========================================================*/
+
+.cluster-name{
+
+    font-weight:700;
+
+    color:#1565C0;
+
+    white-space:nowrap;
+
+}
+
+.version-column{
+
+    word-break:break-word;
+
+    line-height:1.4;
+
+}
+
+.contact-column{
+
+    word-break:break-word;
+
+}
+
+.summary-table{
+
+    min-width:1500px;
+
+}
+
+.summary-table td{
+
+    vertical-align:top;
+
+}
+
+.summary-table th{
+
+    white-space:nowrap;
+
+}
 /*==========================================================
   BADGE PULSE
 ==========================================================*/
@@ -1378,4 +1522,25 @@ footer::before{
 
     }
 
+}
+
+table {
+    display: table !important;
+}
+
+thead {
+    display: table-header-group !important;
+}
+
+tbody {
+    display: table-row-group !important;
+}
+
+tr {
+    display: table-row !important;
+}
+
+th,
+td {
+    display: table-cell !important;
 }

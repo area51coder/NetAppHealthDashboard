@@ -11,7 +11,7 @@ from core.connection import get
 logger = Logger.get_logger()
 
 
-def collect(session):
+def collect(session, cluster_name):
     """
     Collect network port information.
 
@@ -34,6 +34,7 @@ def collect(session):
     for record in records:
 
         port = {
+            "ClusterName": session.cluster_name,
 
             "Node": (
                 record.get("node") or {}

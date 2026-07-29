@@ -11,7 +11,7 @@ from core.connection import get
 logger = Logger.get_logger()
 
 
-def collect(session):
+def collect(session, cluster_name):
     """
     Collect volume information.
 
@@ -55,6 +55,7 @@ def collect(session):
             used_percent = 0
 
         volume = {
+            "ClusterName": session.cluster_name,
 
             "VolumeName": record.get("name"),
 

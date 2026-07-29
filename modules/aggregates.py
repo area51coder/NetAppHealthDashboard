@@ -11,7 +11,7 @@ from core.connection import get
 logger = Logger.get_logger()
 
 
-def collect(session):
+def collect(session, cluster_name):
     """
     Collect aggregate information.
 
@@ -24,7 +24,10 @@ def collect(session):
 
     response = get(
         session,
-        "/api/storage/aggregates"
+        "/api/storage/aggregates",
+        params={
+            "fields": "*"
+        }
     )
 
     records = response.get("records", [])
@@ -61,6 +64,7 @@ def collect(session):
             free_percent = 0
 
         aggregate = {
+            "ClusterName": session.cluster_name,
 
             "AggregateName": record.get("name"),
 

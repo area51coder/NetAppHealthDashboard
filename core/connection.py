@@ -99,6 +99,7 @@ def connect(cluster, credentials, settings):
         session.base_url = f"https://{ip}"
 
         session.timeout = timeout
+        session.cluster_name = cluster["ClusterName"]
 
         # -------------------------------------------------
         # Test Connection

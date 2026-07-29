@@ -74,23 +74,23 @@ def run(clusters, credentials, settings):
 
             cluster_results = {
 
-                "Cluster": collect_cluster(session),
+                "Cluster": collect_cluster(session, cluster_name),
 
-                "Nodes": collect_nodes(session),
+                "Nodes": collect_nodes(session, cluster_name),
 
-                "Aggregates": collect_aggregates(session),
+                "Aggregates": collect_aggregates(session,  cluster_name),
 
-                "Volumes": collect_volumes(session),
+                "Volumes": collect_volumes(session, cluster_name),
 
-                "Disks": collect_disks(session),
+                "Disks": collect_disks(session, cluster_name),
 
-                "Network": collect_network(session),
+                "Network": collect_network(session, cluster_name),
 
-                "Performance": collect_performance(session),
+                "Performance": collect_performance(session, cluster_name),
 
-                "SnapMirror": collect_snapmirror(session),
+                "SnapMirror": collect_snapmirror(session, cluster_name),
 
-                "Events": collect_events(session)
+                "Events": collect_events(session, cluster_name)
 
             }
 
